@@ -1,0 +1,10 @@
+.page-title {
+    margin: 2em auto 1em;
+    text-align: center;
+    text-transform: uppercase;
+}
+@media screen and (min-width: 1024px) {
+    .page-title {
+        font-size: 6rem;
+    }
+}
