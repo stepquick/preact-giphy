@@ -3,8 +3,8 @@ import Result from './Result';
 
 const Results = React.createClass({
 	render() {
-		const resultNodes = this.props.data.map( (res) => {
-			return ( <Result url = {res.embed_url} key = {res.id} />);
+		const resultNodes = this.props.data.map( (response) => {
+			return ( <Result url = {response.images.fixed_height_downsampled.url} key = {response.id} />);
 		});
 		return (
             <div className="container">
