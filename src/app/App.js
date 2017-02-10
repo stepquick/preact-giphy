@@ -6,7 +6,7 @@ const App = React.createClass({
         return (
             <div className="container">
                 <h1 className="page-title">Giphy Search</h1>
-                <Search url="://api.giphy.com/v1/gifs/search" api="dc6zaTOxFJmzC" />
+                <Search url="https://api.giphy.com/v1/gifs/search" api="dc6zaTOxFJmzC" />
             </div>
         );
     },
