@@ -6,4 +6,4 @@ import './main.css';
 import 'normalize.css/normalize.css';
 import 'milligram/dist/milligram.min.css';
 
-ReactDOM.render(<App />, document.getElementById('app'));
+ReactDOM.render(<App />, document.getElementById('root'));

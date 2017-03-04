@@ -18,7 +18,7 @@ const Search = React.createClass({
 		if (!this.state.query) {
 			return;
 		}
-		axios.get(this.props.url + '?q=' + this.state.query + '&limit=10' + '&api_key=' + this.props.api)
+		axios.get(`${this.props.url}?q=${this.state.query}&limit=10&api_key=${this.props.api}`)
 			.then(response => this.setState({
 				data: response.data.data
 			}))

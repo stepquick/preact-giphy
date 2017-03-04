@@ -9,14 +9,12 @@ const divStyle = {
     maxWidth: '100%'
 };
 
-const Result = React.createClass({
-    render() {
-        return (
-            <div className="column column-33" style={divStyle}>
-                <img src={this.props.url} style={imgStyle}/>
-            </div>
-        );
-    }
-});
+const Result = (props) => {
+    return (
+        <div className="column column-33" style={divStyle}>
+            <img src={props.url} style={imgStyle} alt=""/>
+        </div>
+    );
+}
 
 export default Result;
