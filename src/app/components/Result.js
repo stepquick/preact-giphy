@@ -9,10 +9,10 @@ const divStyle = {
     maxWidth: '100%'
 };
 
-const Result = (props) => {
+const Result = ({ url, title }) => {
     return (
         <div className="column column-33" style={divStyle}>
-            <img src={props.url} style={imgStyle} alt=""/>
+            <img src={url} style={imgStyle} alt={title}/>
         </div>
     );
 }
