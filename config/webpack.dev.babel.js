@@ -5,7 +5,7 @@ import common from './webpack.common.babel'
 
 export default webpackMerge(common, {
     output: {
-        path: path.resolve('./dist'),
+        path: path.resolve('./build'),
         publicPath: '/',
         filename: '[name].[hash].js',
         sourceMapFilename: '[name].[hash].map'
