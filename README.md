@@ -1,2 +1,2 @@
-# react-giphy WIP
-Giphy search using ReactJS
+# preact-giphy WIP
+Giphy search using PreactJS
