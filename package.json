@@ -1,33 +1,51 @@
 {
-  "name": "react-giphy",
-  "version": "1.0.0",
-  "description": "Giphy Search with ReactJS",
-  "homepage": "https://stepquick.net/react-giphy",
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "deploy": "git subtree push --prefix build origin gh-pages"
-  },
-  "repository": {
-    "type": "git",
-    "url": "http://www.github.com/stepquick/react-giphy"
-  },
-  "keywords": [
-    "reactjs",
-    "giphy"
-  ],
-  "author": "Stephen Quick",
-  "private": true,
-  "dependencies": {
-    "axios": "^0.15.3",
-    "milligram": "^1.3.0",
-    "normalize.css": "^5.0.0",
-    "react": "^15.4.2",
-    "react-dom": "^15.4.2"
-  },
-  "devDependencies": {
-      "react-scripts": "0.9.3"
-  }
+	"name": "react-giphy",
+	"version": "1.0.0",
+	"description": "Giphy Search with ReactJS",
+	"homepage": "https://stepquick.net/react-giphy",
+	"scripts": {
+		"start": "npm run dev",
+		"dev": "webpack-dev-server --config config/webpack.dev.babel.js",
+		"build": "webpack --config config/webpack.prod.babel.js --progress --profile --colors --display-error-details --display-cached",
+		"build:dev": "webpack --config config/webpack.dev.babel.js --progress --profile --colors --display-error-details --display-cached"
+	},
+	"repository": {
+		"type": "git",
+		"url": "http://www.github.com/stepquick/react-giphy"
+	},
+	"keywords": [
+		"preact",
+		"giphy"
+	],
+	"author": "Stephen Quick",
+	"private": true,
+	"dependencies": {
+		"axios": "^0.15.3",
+		"milligram": "^1.3.0",
+		"normalize.css": "^5.0.0",
+		"preact": "^8.2.1",
+		"preact-compat": "^3.16.0"
+	},
+	"devDependencies": {
+		"babel-core": "^6.2.5",
+		"babel-loader": "^7.1.1",
+		"babel-plugin-transform-react-jsx": "^6.24.1",
+		"babel-preset-env": "^1.5.2",
+		"clean-webpack-plugin": "^0.1.16",
+		"css-loader": "^0.28.4",
+		"extract-text-webpack-plugin": "^3.0.0",
+		"file-loader": "^0.11.2",
+		"html-webpack-plugin": "^2.29.0",
+		"style-loader": "^0.18.2",
+		"url-loader": "^0.5.9",
+		"webpack": "^3.2.0",
+		"webpack-dev-server": "^2.5.1",
+		"webpack-merge": "^4.1.0"
+	},
+    "aliasify": {
+		"aliases": {
+			"react": "preact-compat",
+			"react-dom": "preact-compat"
+		}
+	}
 }

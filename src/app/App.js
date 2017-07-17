@@ -1,4 +1,4 @@
-import React from 'react';
+import { h } from 'preact';
 import Search from './components/Search';
 
 const App = () => {
