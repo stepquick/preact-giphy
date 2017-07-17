@@ -16,7 +16,7 @@ export default webpackMerge(common, {
 	plugins : [
 		new webpack.optimize.CommonsChunkPlugin({name: ['app']}),
 		new ExtractTextPlugin("[name].[hash].css", {allChunks: true}),
-		new HtmlWebpackPlugin({template: 'src/index.html', title: 'ReactJS w/ ES6'}),
+		new HtmlWebpackPlugin({template: 'src/index.html', title: 'PreactJS w/ ES6'}),
 		new CleanWebpackPlugin(['build'], {root: process.cwd()})
 	],
 	devServer : {
