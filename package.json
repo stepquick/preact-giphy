@@ -36,6 +36,7 @@
 		"css-loader": "^0.28.4",
 		"extract-text-webpack-plugin": "^3.0.0",
 		"file-loader": "^0.11.2",
+		"gh-pages": "^1.0.0",
 		"html-webpack-plugin": "^2.29.0",
 		"style-loader": "^0.18.2",
 		"url-loader": "^0.5.9",
@@ -43,7 +44,7 @@
 		"webpack-dev-server": "^2.5.1",
 		"webpack-merge": "^4.1.0"
 	},
-    "aliasify": {
+	"aliasify": {
 		"aliases": {
 			"react": "preact-compat",
 			"react-dom": "preact-compat"
