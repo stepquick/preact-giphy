@@ -5,7 +5,8 @@ import ExtractTextPlugin from 'extract-text-webpack-plugin'
 
 export default {
 	entry: {
-		'app': path.resolve('./src/index.js')
+		'app': path.resolve('./src/index.js'),
+		'vendor': path.resolve('./src/app/vendor/modernizr.min.js')
 	},
 	resolve: {
 		extensions: ['.js'],
